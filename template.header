@@ -1,0 +1,10 @@
+// ==UserScript==
+// @name         name
+// @namespace    tzxhy
+// @version      0.1
+// @description  description
+// @author       tanzhixuan2018@163.com
+// @match        
+// @icon         
+// @grant        none
+// ==/UserScript==
