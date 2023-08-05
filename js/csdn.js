@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         CSDN优化
 // @namespace    tzxhy
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @match        https://blog.csdn.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=csdn.net
+// @updateURL    https://github.com/Tzxhy/tampermonky_js/raw/master/js/csdn.js
 // @grant        none
 // ==/UserScript==
 
@@ -14,6 +15,10 @@
     // 允许复制
     $("#content_views").unbind("copy");
     const targetNode = document.body;
+    const codes = Array.from(document.getElementsByTagName('code'));
+    codes.forEach(i => {
+        i.style.setProperty('user-select', 'text');
+    })
 
     // 观察器的配置（需要观察什么变动）
     const config = { attributes: false, childList: true};
