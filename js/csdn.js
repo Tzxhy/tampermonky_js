@@ -19,7 +19,7 @@
     codes.forEach(i => {
         i.style.setProperty('user-select', 'text');
     })
-    $("#article_content").style.setProperty('height', 'auto');
+    $("#article_content")[0].style.setProperty('height', 'auto');
 
     // 观察器的配置（需要观察什么变动）
     const config = { attributes: false, childList: true};
