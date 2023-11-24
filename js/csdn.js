@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CSDN优化
 // @namespace    tzxhy
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
 // @author       You
 // @match        https://blog.csdn.net/*
@@ -19,6 +19,7 @@
     codes.forEach(i => {
         i.style.setProperty('user-select', 'text');
     })
+    $("#article_content").style.setProperty('height', 'auto');
 
     // 观察器的配置（需要观察什么变动）
     const config = { attributes: false, childList: true};
